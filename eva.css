@@ -812,6 +812,9 @@
                                                 display: flex;
                                                 align-items: center;
                                                 justify-content: center;
+                                                height: 195px;
+                                                width: 260px;
+                                                padding-bottom: 10px;
                                             }
                                             
                                             .card__container__card>a {
@@ -842,5 +845,18 @@
                                                 .card__container__section {
                                                     flex-direction: column;
                                                     align-items: center;
+                                                }
+                                            }
+                                            
+                                            @media only screen and (max-width: 480px) {
+                                                .card__container {
+                                                    max-width: 320px;
+                                                }
+                                                .card__container__section {
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                                .card__container__card {
+                                                    margin-right: 0px;
                                                 }
                                             }
