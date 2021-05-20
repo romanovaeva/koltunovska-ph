@@ -1,0 +1,846 @@
+                                            body {
+                                                padding: 0;
+                                                margin: 0;
+                                                background-color: #181616;
+                                            }
+                                            
+                                            a {
+                                                color: #ffffff;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            ul {
+                                                margin: 0px;
+                                                padding: 0px;
+                                            }
+                                            
+                                            header {
+                                                width: 100%;
+                                                background-color: #181616;
+                                            }
+                                            
+                                            .header {
+                                                padding: 20px;
+                                                height: 60px;
+                                            }
+                                            
+                                            .nav__menu__logo>a {
+                                                font-size: 70px;
+                                                font-family: 'Lora', sans-serif;
+                                            }
+                                            
+                                            .nav__menu {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            .nav__menu__item:last-child {
+                                                margin-right: 0px;
+                                            }
+                                            
+                                            nav ul {
+                                                list-style: none;
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                            
+                                            nav a {
+                                                text-decoration: none;
+                                                outline: none;
+                                                display: block;
+                                                transition: .4s ease-in-out;
+                                            }
+                                            
+                                            .topmenu {
+                                                text-align: center;
+                                                padding: 5px 0;
+                                            }
+                                            
+                                            .topmenu>li {
+                                                display: inline-block;
+                                                position: relative;
+                                            }
+                                            
+                                            .topmenu>li>a {
+                                                padding: 12px 26px;
+                                                color: #ffffff;
+                                                text-transform: uppercase;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 30px;
+                                                font-weight: 400;
+                                            }
+                                            
+                                            .topmenu li a:hover {
+                                                color: #4d4b4b;
+                                            }
+                                            
+                                            .submenu {
+                                                position: absolute;
+                                                left: 50%;
+                                                top: 100%;
+                                                width: 210px;
+                                                margin-left: -105px;
+                                                background: #181616;
+                                                border: 1px solid #181616;
+                                                z-index: 5;
+                                                visibility: hidden;
+                                                opacity: 0;
+                                                transform: scale(.8);
+                                                transition: .4s ease-in-out;
+                                                z-index: 1500;
+                                                background-color: #181616;
+                                            }
+                                            
+                                            .submenu li a {
+                                                padding: 10px 0;
+                                                margin: 0 10px;
+                                                border-bottom: 1px solid #757575;
+                                                font-size: 15px;
+                                                color: #ffffff;
+                                                font-family: 'Roboto', sans-serif;
+                                            }
+                                            
+                                            .topmenu>li:hover .submenu {
+                                                visibility: visible;
+                                                opacity: 10;
+                                                transform: scale(1);
+                                            }
+                                            
+                                            .main__container {
+                                                justify-content: flex-end;
+                                                display: flex;
+                                                align-items: center;
+                                                height: 100vh;
+                                            }
+                                            
+                                            .container__left {
+                                                z-index: 1000;
+                                                padding: 10px;
+                                                align-items: center;
+                                                align-self: center;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-between;
+                                                background-color: #ffffff;
+                                                width: 650px;
+                                                height: 450px;
+                                            }
+                                            
+                                            .container__left>h1 {
+                                                font-size: 60px;
+                                                font-family: 'Lora', serif;
+                                            }
+                                            
+                                            .container__left>p {
+                                                font-size: 30px;
+                                                text-align: center;
+                                                font-family: 'Roboto', sans-serif;
+                                                margin-top: 1px;
+                                            }
+                                            
+                                            .container__left>a {
+                                                color: #181616;
+                                                background-color: #cecccc;
+                                                width: 225px;
+                                                height: 65px;
+                                                display: flex;
+                                                align-self: center;
+                                                align-items: center;
+                                                justify-content: center;
+                                                border-radius: 30px;
+                                                font-size: 25px;
+                                                font-family: 'Roboto', sans-serif;
+                                                margin-bottom: 10px;
+                                            }
+                                            
+                                            .container__right {
+                                                margin-left: -150px;
+                                                z-index: 50;
+                                            }
+                                            
+                                            .container__mobile {
+                                                display: none;
+                                            }
+                                            
+                                            footer {
+                                                padding: 20px;
+                                                height: 40px;
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .footer__author {
+                                                display: flex;
+                                                color: #ffffff;
+                                                justify-content: center;
+                                                font-size: 20px;
+                                                padding: 10px;
+                                                color: #A8A8A8;
+                                            }
+                                            
+                                            .footer__top {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: flex-end;
+                                            }
+                                            
+                                            .footer__icon {
+                                                height: 30px;
+                                                margin-right: 5px;
+                                            }
+                                            
+                                            .footer__icon1 {
+                                                height: 43px;
+                                                margin-right: 5px;
+                                            }
+                                            
+                                            @media only screen and (max-width: 1024px) {
+                                                .main__container {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                }
+                                                .container__right>img {
+                                                    display: none;
+                                                }
+                                                .nav__menu__items {
+                                                    display: none;
+                                                }
+                                                .container__mobile {
+                                                    display: block;
+                                                }
+                                                .container__mobile>img {
+                                                    width: 100%;
+                                                }
+                                                .nav__menu__logo>h1 {
+                                                    font-size: 20px;
+                                                }
+                                            }
+                                            
+                                            .portflio ul {
+                                                margin: 0;
+                                                padding: 0;
+                                                list-style-type: none;
+                                            }
+                                            
+                                            .portfolio li {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                justify-content: center;
+                                                position: relative;
+                                                padding: 10px;
+                                                margin: 0;
+                                                list-style-type: none;
+                                            }
+                                            
+                                            .portfolio img {
+                                                max-width: 100%;
+                                                display: block;
+                                            }
+                                            
+                                            .descr {
+                                                display: flex;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                background-color: rgba(0, 0, 0, .5);
+                                                color: #535050;
+                                                text-align: center;
+                                                font-family: 'roboto', sans-serif;
+                                                font-size: 75px;
+                                                opacity: 0;
+                                                -webkit-transition: all .5s;
+                                                -o-transition: all .5s;
+                                                transition: all .5s;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .portfolio li:hover .descr {
+                                                opacity: 1;
+                                            }
+                                            
+                                            .name__children>h1 {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                position: relative;
+                                                padding: 8px;
+                                                margin: 0;
+                                                color: #ffffff;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 50px;
+                                                background-color: #4d4b4b;
+                                            }
+                                            
+                                            .children__container {
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .children__image {
+                                                width: 100%;
+                                            }
+                                            
+                                            .name__portrets>h1 {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                position: relative;
+                                                padding: 8px;
+                                                margin: 0;
+                                                color: #ffffff;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 50px;
+                                                background-color: #4d4b4b;
+                                            }
+                                            
+                                            .portrets__container {
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .portrets__image {
+                                                width: 100%;
+                                            }
+                                            
+                                            .name__family>h1 {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                position: relative;
+                                                padding: 8px;
+                                                margin: 0;
+                                                color: #ffffff;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 50px;
+                                                background-color: #4d4b4b;
+                                            }
+                                            
+                                            .family__container {
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .family__image {
+                                                width: 100%;
+                                            }
+                                            
+                                            .contact__main__container {
+                                                display: flex;
+                                                padding: 20px;
+                                                background-color: #ffffff;
+                                                justify-content: space-between;
+                                                width: 1100px;
+                                                margin: auto;
+                                                margin-top: 30px;
+                                                border-radius: 10px;
+                                            }
+                                            
+                                            .contact__main__container__left {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                flex-direction: column;
+                                                width: 400px;
+                                            }
+                                            
+                                            .contact__main__container__right {
+                                                width: 700px;
+                                            }
+                                            
+                                            .main__container__left__paragraph {
+                                                display: flex;
+                                                align-self: center;
+                                                width: 100%;
+                                                align-items: center;
+                                                justify-content: center;
+                                                height: 90%;
+                                                font-family: 'Roboto', sans-serif;
+                                            }
+                                            
+                                            .main__container__left__telephone {
+                                                display: flex;
+                                                align-items: flex-end;
+                                                font-family: 'Roboto', sans-serif;
+                                            }
+                                            
+                                            .contact__us__container__item {
+                                                display: flex;
+                                                flex-direction: column;
+                                                margin-bottom: 20px;
+                                            }
+                                            
+                                            .contact__us__container {
+                                                display: flex;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            .contact__field {
+                                                padding-left: 15px;
+                                                width: 320px;
+                                                height: 34px;
+                                                border-radius: 4px;
+                                                background-color: #e0e0e0;
+                                                outline: none;
+                                                border: none;
+                                                padding-bottom: 2px;
+                                            }
+                                            
+                                            .contact__us__textarea {
+                                                width: 685px;
+                                                height: 200px;
+                                                border-radius: 4px;
+                                                background-color: #e0e0e0;
+                                                margin-bottom: 20px;
+                                                outline: none;
+                                                border: none;
+                                                padding-left: 15px;
+                                                padding-top: 5px;
+                                            }
+                                            
+                                            .main__container__left__paragraph {
+                                                font-size: 30px;
+                                            }
+                                            
+                                            .main__container__left__telephone>a {
+                                                font-size: 20px;
+                                                color: #000000;
+                                            }
+                                            
+                                            .contact__us__container__item__label {
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            .contact__us__btn {
+                                                display: flex;
+                                                text-decoration: none;
+                                                align-items: center;
+                                                align-self: center;
+                                                justify-content: center;
+                                                width: 200px;
+                                                height: 48px;
+                                                border-radius: 3px;
+                                                color: #ffffff;
+                                                background: #000000;
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                font-stretch: normal;
+                                                font-style: normal;
+                                                line-height: normal;
+                                                letter-spacing: 0.8px;
+                                                width: 700px;
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                            .contact__us__btn:hover {
+                                                color: #757373;
+                                            }
+                                            
+                                            .container__left__1 {
+                                                align-items: center;
+                                                align-self: center;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                background-color: #ffffff;
+                                                width: 1400px;
+                                                height: 100px;
+                                                border-radius: 10px;
+                                                margin-bottom: 15px;
+                                                margin-top: 20px;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 20px;
+                                                text-align: center;
+                                                margin-left: 100px;
+                                                margin-right: 10px;
+                                            }
+                                            
+                                            .container__right__1 {
+                                                align-items: center;
+                                                align-self: center;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                background-color: #A8A8A8;
+                                                width: 1300px;
+                                                height: 100px;
+                                                border-radius: 10px;
+                                                margin-bottom: 15px;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 20px;
+                                                text-align: center;
+                                                margin-right: 100px;
+                                                margin-left: 10px;
+                                            }
+                                            
+                                            .container__right__1>p {
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                            }
+                                            
+                                            .container__left__1>p {
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                            }
+                                            
+                                            .container__left__1>img {
+                                                margin-left: 2px;
+                                                float: left;
+                                            }
+                                            
+                                            .textdiv {
+                                                position: absolute;
+                                                top: 65%;
+                                                /*центруємо блок з текстом*/
+                                                left: 50%;
+                                                /*центруємо блок з текстом*/
+                                                transform: translate(-50%, -50%);
+                                                /*центруємо блок з текстом*/
+                                                padding: 50px;
+                                                text-align: center;
+                                                font-family: 'Roboto', sans-serif;
+                                                font-size: 50px;
+                                                font-weight: 700;
+                                                color: #ffffff;
+                                            }
+                                            
+                                            #videoBg {
+                                                position: fixed;
+                                                /*фіксуємо відео (при скролінгу)*/
+                                                z-index: -1;
+                                                /*на задній план*/
+                                                height: 80%;
+                                                width: 100%;
+                                            }
+                                            
+                                            .main p {
+                                                /*застосовуємо стилі до всіх елементів p з класу main*/
+                                                padding: 50px;
+                                            }
+                                            
+                                            @media only screen and (max-width: 1024px) {
+                                                .children__container {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                            }
+                                            
+                                            @media only screen and (max-width: 1024px) {
+                                                .family__container {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                            }
+                                            
+                                            .hamburger-menu {
+                                                display: none;
+                                            }
+                                            
+                                            @media only screen and (max-width: 1024px) {
+                                                .portrets__container {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                                .container__left__1 {
+                                                    align-items: center;
+                                                    align-self: center;
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    background-color: #ffffff;
+                                                    border-radius: 10px;
+                                                    margin-bottom: 15px;
+                                                    font-family: 'Roboto', sans-serif;
+                                                    font-size: 15px;
+                                                    text-align: center;
+                                                    margin-left: 10px;
+                                                    margin-right: 10px;
+                                                    width: 350px;
+                                                    margin-top: 0px;
+                                                }
+                                                .container__right__1 {
+                                                    align-items: center;
+                                                    align-self: center;
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    background-color: #A8A8A8;
+                                                    border-radius: 10px;
+                                                    margin-bottom: 15px;
+                                                    font-family: 'Roboto', sans-serif;
+                                                    font-size: 15px;
+                                                    text-align: center;
+                                                    margin-right: 10px;
+                                                    margin-left: 10px;
+                                                    width: 350px;
+                                                }
+                                                .nav__menu__logo>a {
+                                                    font-size: 30px;
+                                                    padding: 15px;
+                                                }
+                                                .nav__menu {
+                                                    display: none;
+                                                }
+                                                .header {
+                                                    height: 1px;
+                                                    padding: 1px;
+                                                }
+                                                .main__container__advice {
+                                                    padding: 0px;
+                                                    width: 100%;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    flex-direction: column;
+                                                }
+                                                .container__left {
+                                                    padding: 0px;
+                                                    width: 100%;
+                                                }
+                                                .container__left>h1 {
+                                                    font-family: 'Lora', sans-serif;
+                                                    font-size: 30px;
+                                                    text-align: center;
+                                                }
+                                                .container__left>p {
+                                                    font-family: 'Roboto', sans-serif;
+                                                    font-size: 25px;
+                                                    text-align: center;
+                                                }
+                                                .container__left>a {
+                                                    font-family: 'Roboto', sans-serif;
+                                                    font-size: 25px;
+                                                    width: 200px;
+                                                    height: 50px;
+                                                    margin-bottom: 20px;
+                                                }
+                                                .footer__top {
+                                                    align-items: center;
+                                                    align-self: center;
+                                                    display: flex;
+                                                }
+                                                .footer__author {
+                                                    align-items: center;
+                                                    align-self: center;
+                                                    display: flex;
+                                                    font-size: 20px;
+                                                }
+                                                .portflio>ul>li {
+                                                    width: 200px;
+                                                }
+                                                .topmenu1 {
+                                                    display: table;
+                                                    z-index: 2000;
+                                                }
+                                                #menu__toggle {
+                                                    opacity: 0;
+                                                }
+                                                .menu__btn {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    position: fixed;
+                                                    top: 20px;
+                                                    right: 20px;
+                                                    width: 26px;
+                                                    height: 60px;
+                                                    cursor: pointer;
+                                                    z-index: 2100;
+                                                }
+                                                .menu__btn>span,
+                                                .menu__btn>span::before,
+                                                .menu__btn>span::after {
+                                                    display: block;
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    height: 2px;
+                                                    background-color: #ffffff;
+                                                }
+                                                .menu__btn>span::before {
+                                                    content: '';
+                                                    top: -8px;
+                                                }
+                                                .menu__btn>span::after {
+                                                    content: '';
+                                                    top: 8px;
+                                                }
+                                                .topmenu1 {
+                                                    display: block;
+                                                    position: fixed;
+                                                    visibility: hidden;
+                                                    top: 0;
+                                                    left: 100%;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    margin: 0;
+                                                    padding: 100px 0;
+                                                    list-style: none;
+                                                    text-align: center;
+                                                    background-color: #181616;
+                                                    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+                                                }
+                                                .menu__item {
+                                                    display: block;
+                                                    padding: 12px 24px;
+                                                    color: #ffffff;
+                                                    font-family: 'Roboto', sans-serif;
+                                                    font-size: 20px;
+                                                    text-decoration: none;
+                                                }
+                                                .menu__item:hover {
+                                                    background-color: #CFD8DC;
+                                                }
+                                                #menu__toggle:checked~.menu__btn>span {
+                                                    transform: rotate(45deg);
+                                                }
+                                                #menu__toggle:checked~.menu__btn>span::before {
+                                                    top: 0;
+                                                    transform: rotate(0);
+                                                }
+                                                #menu__toggle:checked~.menu__btn>span::after {
+                                                    top: 0;
+                                                    transform: rotate(90deg);
+                                                }
+                                                #menu__toggle:checked~.topmenu1 {
+                                                    visibility: visible;
+                                                    left: 0;
+                                                }
+                                                .menu__btn>span,
+                                                .menu__btn>span::before,
+                                                .menu__btn>span::after {
+                                                    transition-duration: .25s;
+                                                }
+                                                .menu__box {
+                                                    transition-duration: .25s;
+                                                }
+                                                .menu__item {
+                                                    transition-duration: .25s;
+                                                }
+                                                .hamburger-menu {
+                                                    display: table;
+                                                }
+                                                .hamburger-menu>p {
+                                                    display: flex;
+                                                    color: #ffffff;
+                                                    font-family: 'Lora', sans-serif;
+                                                    font-size: 30px;
+                                                    margin-left: 10px;
+                                                }
+                                                .name__children>h1 {
+                                                    font-size: 20px;
+                                                }
+                                                .contact__main__container {
+                                                    padding: 10px;
+                                                    height: auto;
+                                                    justify-content: center;
+                                                    flex-wrap: wrap;
+                                                    display: flex;
+                                                    max-width: 1100px;
+                                                    width: auto;
+                                                    margin: 10px;
+                                                }
+                                                .contact__us__container {
+                                                    flex-direction: column;
+                                                }
+                                                .contact__us__textarea,
+                                                .contact__us__btn {
+                                                    width: 320px;
+                                                }
+                                                .main__container__left__telephone {
+                                                    margin-bottom: 20px;
+                                                    justify-content: center;
+                                                }
+                                                .contact__main__container__left {
+                                                    text-align: center;
+                                                }
+                                                .contact__main__container__right {
+                                                    justify-content: center;
+                                                    width: 700px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                            }
+                                            
+                                            @media only screen and (max-width: 480px) {
+                                                .contact__field,
+                                                .contact__us__textarea,
+                                                .contact__us__btn {
+                                                    width: 280px;
+                                                }
+                                            }
+                                            
+                                            .card__container {
+                                                display: flex;
+                                                align-items: center;
+                                                width: 1200px;
+                                                justify-content: center;
+                                                margin: auto;
+                                            }
+                                            
+                                            .card__container__section {
+                                                justify-content: space-between;
+                                                display: flex;
+                                            }
+                                            
+                                            .card__container__card {
+                                                margin-right: 20px;
+                                                border-radius: 5px;
+                                                background-color: #757373;
+                                                height: 330px;
+                                                width: 220px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                padding: 20px;
+                                                margin-bottom: 50px;
+                                            }
+                                            
+                                            .card__container__card>h2 {
+                                                color: #ffffff;
+                                                text-align: center;
+                                            }
+                                            
+                                            .card__container__card>img {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .card__container__card>a {
+                                                font-size: 14px;
+                                                border-radius: 10px;
+                                                cursor: pointer;
+                                                background-color: #4d4b4b;
+                                                width: 120px;
+                                                height: 20px;
+                                                padding: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .card__container__card>a:hover {
+                                                font-size: 15px;
+                                                text-transform: uppercase;
+                                                font-weight: 300;
+                                                background-color: #4e4a4a;
+                                            }
+                                            
+                                            .card__container {
+                                                margin-top: 100px;
+                                            }
+                                            
+                                            @media only screen and (max-width: 480px) {
+                                                .card__container__section {
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                            }
